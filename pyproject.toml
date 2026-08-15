@@ -1,0 +1,11 @@
+[project]
+name = "hapager"
+version = "0.1.0"
+description = "Home automation pager based on the LILYGO T-Embed"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "paho-mqtt>=2.0",
+]
