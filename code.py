@@ -257,7 +257,7 @@ def init_mqtt():
     # Set up a MiniMQTT Client
     mqtt_client = MQTT.MQTT(
         broker=os.getenv('MQTT_HOST'),
-        port=os.getenv('MQTT_PORT'),
+        port=int(os.getenv('MQTT_PORT')),
         username=os.getenv('MQTT_USER'),
         password=os.getenv('MQTT_PASS'),
         socket_pool=pool,
